@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App2</string>
+
+    <string-array name="Carreras">
+        <item>Sistemas Informaticos</item>
+        <item>Mercadotecnia</item>
+        <item>Secretariado</item>
+        <item>Contqaduria</item>
+    </string-array>
+</resources>

@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         public void DatosFormulario(View v){
+            Toast.makeText(this, "Cosa", Toast.LENGTH_SHORT).show();
         StringBuilder mensaje=new StringBuilder();
         mensaje.append("Nombre: ").append(nombre.getText().toString()).append("\n");
         mensaje.append("Apellido: ").append(apellido.getText().toString()).append("\n");
@@ -88,5 +90,6 @@ public class MainActivity extends AppCompatActivity {
      new AlertDialog.Builder(this).setTitle("Datos Estudiante")
              .setMessage(mensaje).setPositiveButton("OK",null)
              .show();
+    //Comentario nuevo
     }
 }

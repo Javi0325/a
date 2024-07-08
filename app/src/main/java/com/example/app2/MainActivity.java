@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
          mensaje.append(chOtro.getText().toString()).append("");
          //mensaje+=chOtro.getText().toString();
      }
-
+     mensaje.append("\n");
      mensaje.append("Sexo: ");
      if(rHombre.isChecked()){
          mensaje.append(rHombre.getText().toString());
@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
      if(rMujer.isChecked()){
          mensaje.append(rMujer.getText().toString());
      }
-
-     mensaje.append("Carrera: ").append("\n");
+     mensaje.append("\n");
+     mensaje.append("Carrera: ");
      mensaje.append(listaCursos.getSelectedItem().toString());
 
      //Ventana tipo alert para mensaje completo
